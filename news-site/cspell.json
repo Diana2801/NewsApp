@@ -8,7 +8,20 @@
         "addWords": true
       }
     ],
-    "words":[],
+    "words":[
+    "Fingerstache",
+    "flexitarian",
+    "Fingerstache",
+    "flexitarian",
+    "Fingerstache",
+    "flexitarian",
+    "Melanchole",
+    "Fingerstache",
+    "flexitarian",
+    "Fingerstache",
+    "flexitarian",
+    "Kickstarter"
+  ],
     "dictionaries": ["project-words"],
     "ignorePaths": ["node_modules", "/project-words.txt"]
   }

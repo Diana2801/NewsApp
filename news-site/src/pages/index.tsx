@@ -1,9 +1,24 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import Dashboard from '@/components/dashboard/Dashboard'
 
 
 const inter = Inter({ subsets: ['latin'] })
+
+export interface NewItemInfo{
+  title: string,
+  description: string
+}
+export const fakeNewsData: NewItemInfo[] = 
+  [
+    {title:"First new", description:"First long description with details"},
+    {title:"Second new", description:"Second long description with details"},
+    {title:"Third new", description:"Third long description with details"},
+    {title:"Fourth new", description:"Fourth long description with details"},
+    {title:"Fifth new", description:"Fifth long description with details"},
+    {title:"Sixth new", description:"Sixth long description with details"},
+  ]
 
 export default function Home() {
   return (
@@ -15,9 +30,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1 className="text-3xl font-bold underline">
-          Hello world! 
-        </h1>
+          <Dashboard items={fakeNewsData}/>       
       </main>
     </>
   )
